@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://global.media.stux.cloud/icon.png">
+    <meta name="description" content="Opt-out preferences for this Stux.Cloud placeholder page.">
+    <title>Opt-Out Preferences | Legal — Stux.Cloud</title>
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg: #051e03; --bg-card: rgba(255, 255, 255, 0.04); --border: rgba(255, 255, 255, 0.07);
+            --text-1: #eef2ee; --text-2: rgba(238, 242, 238, 0.55); --text-3: rgba(238, 242, 238, 0.35);
+            --accent: #00ac00; --accent-bg: rgba(0, 172, 0, 0.12); --accent-border-strong: rgba(0, 172, 0, 0.35);
+            --accent-border-hover: rgba(0, 172, 0, 0.55); --accent-hover: rgba(0, 172, 0, 0.22);
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #e8ffe6; --bg-card: rgba(0, 0, 0, 0.04); --border: rgba(0, 0, 0, 0.08);
+                --text-1: #081008; --text-2: rgba(0, 0, 0, 0.55); --text-3: rgba(8, 16, 8, 0.35);
+                --accent: #006400; --accent-bg: rgba(0, 100, 0, 0.07); --accent-border-strong: rgba(0, 100, 0, 0.28);
+                --accent-border-hover: rgba(0, 100, 0, 0.45); --accent-hover: rgba(0, 100, 0, 0.13);
+            }
+        }
+        :root.theme-light {
+            --bg: #e8ffe6; --bg-card: rgba(0, 0, 0, 0.04); --border: rgba(0, 0, 0, 0.08);
+            --text-1: #081008; --text-2: rgba(0, 0, 0, 0.55); --text-3: rgba(8, 16, 8, 0.35);
+            --accent: #006400; --accent-bg: rgba(0, 100, 0, 0.07); --accent-border-strong: rgba(0, 100, 0, 0.28);
+            --accent-border-hover: rgba(0, 100, 0, 0.45); --accent-hover: rgba(0, 100, 0, 0.13);
+        }
+        :root.theme-dark {
+            --bg: #051e03; --bg-card: rgba(255, 255, 255, 0.04); --border: rgba(255, 255, 255, 0.07);
+            --text-1: #eef2ee; --text-2: rgba(238, 242, 238, 0.55); --text-3: rgba(238, 242, 238, 0.35);
+            --accent: #00ac00; --accent-bg: rgba(0, 172, 0, 0.12); --accent-border-strong: rgba(0, 172, 0, 0.35);
+            --accent-border-hover: rgba(0, 172, 0, 0.55); --accent-hover: rgba(0, 172, 0, 0.22);
+        }
+
+        html, body { background: var(--bg); color: var(--text-1); font-family: 'Inter', sans-serif; min-height: 100%; transition: background 0.3s, color 0.3s; }
+        a, a:visited { color: var(--accent) !important; text-decoration: none !important; }
+        a:hover, a:focus { opacity: 0.8; }
+
+        .site-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 6%; }
+        .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: var(--text-1) !important; }
+        .brand img { height: 32px; width: auto; }
+        #theme-toggle {
+            background: var(--accent-bg); border: 1px solid var(--accent-border-strong); border-radius: 50%;
+            width: 38px; height: 38px; font-size: 17px; line-height: 38px; text-align: center; cursor: pointer;
+            padding: 0; color: var(--accent); transition: background 0.2s, border-color 0.2s;
+        }
+        #theme-toggle:hover { background: var(--accent-hover); border-color: var(--accent-border-hover); }
+
+        main { max-width: 680px; margin: 0 auto; padding: 10px 6% 60px; }
+        .back-link { display: inline-block; font-size: 0.85rem; margin-bottom: 20px; opacity: 0.8; font-weight: 500; }
+        h1 { font-family: 'Stuxedo Tale', 'Exo 2', sans-serif; font-weight: 800; font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 6px; }
+        .meta { color: var(--text-3); font-size: 0.85rem; margin: 0 0 28px; }
+        h2 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; color: var(--text-1); }
+        p, li { color: var(--text-2); font-size: 0.95rem; line-height: 1.7; font-weight: 300; }
+        ul { padding-left: 22px; margin: 8px 0; }
+        strong { color: var(--text-1); font-weight: 600; }
+
+        footer { text-align: center; padding: 20px 6% 40px; font-size: 0.8rem; color: var(--text-3); border-top: 1px solid var(--border); margin-top: 20px; }
+        footer a { color: var(--text-3) !important; font-weight: 400; opacity: 0.8; }
+        footer a:hover { opacity: 1; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="brand" href="../"><img src="https://global.media.stux.cloud/icon.png" alt="Stux.Cloud">
+        <span>Stux.Cloud</span></a>
+    <button type="button" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#9788;</button>
+</header>
+
+<main>
+    <a class="back-link" href="../legal">&larr; Boring Legal Stuff</a>
+    <h1>Opt-Out Preferences</h1>
+    <p class="meta">The short version: there's nothing to opt out of.</p>
+
+    <h2>No data sale or sharing</h2>
+    <p>Laws like California's CCPA/CPRA give you the right to opt out of the sale or sharing of your personal data. This page has nothing to opt out of in that sense &mdash; it collects no personal information for advertising or analytics, so there's none to sell or share.</p>
+
+    <h2>What actually happens</h2>
+    <p>Fonts are served from this same domain, not a third-party CDN. The only outside data flow is your own browser fetching the logo and icon images from <code>global.media.stux.cloud</code> &mdash; not something that could be sold even if we wanted to; we're not in the middle of the request.</p>
+
+    <h2>Do Not Track</h2>
+    <p>Because this page runs no tracking scripts, a browser's "Do Not Track" signal has no additional effect here &mdash; there's nothing being tracked either way.</p>
+
+    <h2>Questions</h2>
+    <p>If you have questions about data handling not covered here, email <a href="mailto:legal@stux.cloud">legal@stux.cloud</a>.</p>
+</main>
+
+<footer>
+    <p>Stux.Cloud is operated by Stux Group Ltd. &copy; 2026 Stux Group Ltd. All rights reserved.</p>
+</footer>
+
+<script>
+    (function () {
+        var root = document.documentElement;
+        var btn = document.getElementById('theme-toggle');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var stored = localStorage.getItem('stuxedo-theme');
+        var isDark = stored ? stored === 'dark' : prefersDark;
+
+        function apply(dark) {
+            root.classList.toggle('theme-dark', dark);
+            root.classList.toggle('theme-light', !dark);
+            btn.textContent = dark ? '☀' : '☾';
+            btn.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
+        }
+
+        apply(isDark);
+
+        btn.addEventListener('click', function () {
+            isDark = !isDark;
+            localStorage.setItem('stuxedo-theme', isDark ? 'dark' : 'light');
+            apply(isDark);
+        });
+    })();
+</script>
+</body>
+</html>
