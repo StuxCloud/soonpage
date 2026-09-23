@@ -5,6 +5,11 @@ All notable changes to Soonpage are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
+## v1.0.2
+
+### Fixed
+- The headline read "This service/instance/project/website is" — an overly long, non-standard variant that also got visually cut off on smaller viewports. Changed to "This service and/or website is", matching the convention already used on StuxAPIs' and Stux.Dev's soonpage/maintenancepage.
+
 ## v1.0.1
 
 ### Fixed
