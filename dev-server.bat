@@ -1,32 +1,43 @@
 @echo off
 setlocal
-REM Soonpage - Local dev server (Windows)
-REM Usage: dev-server.bat [port]
-REM   port    default: 8000
+REM Stux.Cloud Soonpage - Local dev server (Windows)
+REM Usage: dev-server.bat [port] [--no-dev-mode]
+REM   port            default: 8000
+REM   --no-dev-mode   render exactly as production does (no dev banner)
 REM
-REM This project is a single static HTML page (no build step, no
-REM server-side config), so there's no DEV_MODE/production split to
-REM toggle - this script just serves the repo root over HTTP so
-REM index.html can be opened without hand-configuring a static server
-REM each time.
+REM Static site, nothing to build: this serves the folder the way GitHub Pages does through
+REM .github\dev-router.php. DEV_MODE is on by default, which makes the router answer
+REM /assets/dev-mode.js with window.SITE_DEV_MODE = true, so every page shows the dev banner.
+REM PHP is only the local web server here; like the other Stux projects it runs on PHP 7.4:
+REM %PHP_BIN% if set, else %LOCALAPPDATA%\Programs\PHP\7.4, else php74 on PATH, else php.
 
 set "DIR=%~dp0"
+set "PORT=8000"
+set "DEV_MODE=1"
+
+:args
+if "%~1"=="" goto run
+if /I "%~1"=="--no-dev-mode" (
+    set "DEV_MODE=0"
+    shift
+    goto args
+)
 set "PORT=%~1"
-if "%PORT%"=="" set "PORT=8000"
+shift
+goto args
 
-echo Serving %DIR% at http://127.0.0.1:%PORT%
+:run
+set "PHP=%PHP_BIN%"
+if not defined PHP if exist "%LOCALAPPDATA%\Programs\PHP\7.4\php.exe" set "PHP=%LOCALAPPDATA%\Programs\PHP\7.4\php.exe"
+if not defined PHP (where php74 >nul 2>&1 && set "PHP=php74")
+if not defined PHP set "PHP=php"
+for /f "delims=" %%v in ('"%PHP%" -r "echo PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION;"') do set "PHPVER=%%v"
+if not "%PHPVER%"=="7.4" echo WARNING: serving with PHP %PHPVER%; the Stux projects use PHP 7.4. Install 7.4 or set PHP_BIN. 1>&2
 
-where php >nul 2>&1
-if %errorlevel%==0 (
-    php -S 127.0.0.1:%PORT% -t "%DIR%"
-    goto :eof
+if "%DEV_MODE%"=="1" (
+    echo DEV_MODE on ^(dev banner^) - pass --no-dev-mode to see it as production does.
+) else (
+    echo DEV_MODE off - rendering exactly as production does.
 )
-
-where python >nul 2>&1
-if %errorlevel%==0 (
-    python -m http.server %PORT% --directory "%DIR%" --bind 127.0.0.1
-    goto :eof
-)
-
-echo Neither php nor python found on PATH - install one to run a local server.
-exit /b 1
+echo Stux.Cloud Soonpage running at http://127.0.0.1:%PORT% ^(PHP %PHPVER%^)
+"%PHP%" -S 127.0.0.1:%PORT% -t "%DIR%." "%DIR%.github\dev-router.php"

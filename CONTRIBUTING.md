@@ -23,6 +23,7 @@ a local static server pointed at the directory. Then open
 - General contact uses `hello@stux.cloud`; legal-page contact uses `legal@stux.cloud`.
 - This page is reused for a service, instance, project, or the website itself — keep copy generic enough to cover all of those.
 - Match the existing code style: no comments explaining *what* the markup does, only *why* when something is genuinely non-obvious.
+- The sitemap (`sitemap.xml`, `sitemap/index.html`, `robots.txt`) is generated: after adding or removing a page, edit the `PAGES` list in `scripts/build-sitemap.py` and run `python scripts/build-sitemap.py`, then commit the result
 
 ## Versioning and changelog
 
