@@ -41,6 +41,12 @@ This project uses GitHub Pages and can be automatically deployed to your desired
 
 The live version is deployed at [soonpage.stux.cloud](https://soonpage.stux.cloud).
 
+## Previous designs
+
+This repository always holds the current Stux.Cloud design (v3, single teal `#07878e`). Earlier designs are preserved as their own archived repositories:
+
+- [soonpage-v2](https://github.com/StuxCloud/soonpage-v2): the two-tone green design, live at [soonpage-v2.stux.cloud](https://soonpage-v2.stux.cloud/)
+
 ## License
 
 This project is open source and available for use and modification.
