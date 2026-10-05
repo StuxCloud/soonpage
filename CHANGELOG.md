@@ -5,6 +5,16 @@ All notable changes to Soonpage are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
+## v3.0.1
+
+### Changed
+
+- README footer now matches the Stux.Cloud `.github` footer ("Built & Maintained by Stux.Cloud…" and "Stux.Cloud is a part of the Stux.Group brand of businesses"), like every other Stux.Cloud repository
+
+### Fixed
+
+- The imprint said this page is published as Stux.Cloud, "which is operated by Stux.Cloud, which is operated by" Stux Group Ltd, repeating itself; it now reads "published as Stux.Cloud, which is operated by" Stux Group Ltd
+
 ## v3.0.0
 
 ### Changed

@@ -53,8 +53,8 @@ This project is open source and available for use and modification.
 
 ---
 
-*Built & Maintained by <img src="https://global.media.stux.cloud/icon.png" height="14" alt="Stux.Cloud" valign="middle"> [Stux.Cloud](https://github.com/StuxCloud).
-Stux.Cloud is operated by Stux Group Ltd, a company registered in England and Wales (company no. 13160574), registered office 82a James Carter Road, Mildenhall, England, IP28 7DE.*
+*Built & Maintained by <img src="https://github.com/StuxCloud.png" height="14" alt="Stux.Cloud" valign="middle"> [Stux.Cloud](https://github.com/StuxCloud), Hosted by <img src="https://github.com/Stuxedo.png" height="14" alt="Stuxedo" valign="middle"> [Stuxedo](https://stuxedo.com).    
+Stux.Cloud is a part of the <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group brand of businesses.*
 
 ## Local preview
 
