@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://global.media.stux.cloud/logo.png" height="80" alt="Stux.Cloud Logo">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.cloud/logo-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.cloud/logo-dark.png"><img src="https://global.media.stux.cloud/logo-dark.png" height="80" alt="Stux.Cloud Logo"></picture>
 </p>
 
 # Contributing to Coming Soon Page
