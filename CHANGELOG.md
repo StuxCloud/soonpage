@@ -5,6 +5,12 @@ All notable changes to Soonpage are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
+## v3.0.3
+
+### Changed
+
+- The footer no longer says "Stux.Cloud is operated by Stux Group Ltd."; that belongs on the Imprint, which still says it. The copyright line names Stux.Cloud ("© year Stux.Cloud. All rights reserved.") instead of Stux.Group
+
 ## v3.0.2
 
 ### Fixed
