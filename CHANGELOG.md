@@ -5,6 +5,12 @@ All notable changes to Soonpage are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
+## v3.0.2
+
+### Fixed
+
+- The light/dark choice was saved in the browser under `stuxedo-theme`, a name left over from the Stuxedo page this one was built from; it's now `stuxcloud-theme` on every page, and the Cookies Policy names it correctly. A theme picked before this update resets to the system setting once
+
 ## v3.0.1
 
 ### Changed
