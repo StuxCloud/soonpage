@@ -47,6 +47,10 @@ This repository always holds the current Stux.Cloud design (v3, single teal `#07
 
 - [soonpage-v2](https://github.com/StuxCloud/soonpage-v2): the two-tone green design, live at [soonpage-v2.stux.cloud](https://soonpage-v2.stux.cloud/)
 
+## Versioning
+
+This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
+
 ## License
 
 This project is open source and available for use and modification.
