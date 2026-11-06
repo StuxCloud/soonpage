@@ -5,6 +5,12 @@ All notable changes to Coming Soon Page are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.11.06-1
+
+### Fixed
+
+- CI passes again: the HTML check allows the colon in the Discord link preview's `id="discord:component-embed"` (html-validate's `valid-id` rule in relaxed mode, as the other Stux.Cloud pages have it). It had failed on every push since the previews were added
+
 ## v26.11.06
 
 ### Added
