@@ -4,7 +4,7 @@
 
 # Contributing to Coming Soon Page
 
-This is a single-file HTML template, open for use and modification per the
+This is a small static HTML template, open for use and modification per the
 [License](README.md#license) section. This document is for anyone working on
 the template itself (not a downstream deployment).
 
@@ -44,3 +44,7 @@ This project uses [Date Versioning](https://datevers.ing). To release:
 
 - Open `index.html` in a browser and check it renders correctly
 - Check the page at common viewport widths (mobile/tablet/desktop) since it's meant to be responsive
+
+---
+
+*Stux.Cloud is a part of the [Stux.Group](https://github.com/StuxGroup) brand of businesses.*
