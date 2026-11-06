@@ -7,12 +7,18 @@ and this project adheres to [Date Versioning](https://datevers.ing) since v26.10
 
 ## v26.11.06
 
+### Added
+
+- A `test` branch. Work happens there, and changes reach `main` only through a pull request from `test` that needs CI to pass and is reviewed and merged by Leo. Release commits and tags are made on `test`
+
 ### Changed
 
 - The README's **Local preview** section moved up from below the footer, and the README gains a **Contributing** section where it had none
 - The README footer's Stux.Cloud and Stuxedo icons follow GitHub's light or dark theme (`icon-light`/`icon-dark` from each brand's media CDN) instead of using their GitHub avatars
 - `CONTRIBUTING.md` calls this a small static HTML template rather than a single-file one (it has several pages), and ends with the Stux.Group note
 - The changelog's intro uses the page's name, Coming Soon Page (it said Soonpage)
+- CI runs on pushes to `test` as well as `main`
+- The README's Versioning section and a new **Branches** section in `CONTRIBUTING.md` describe the `test` branch, and `commit.sh`/`commit.bat` suggest pushing to `test`
 
 ### Removed
 
