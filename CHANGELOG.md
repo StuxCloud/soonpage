@@ -1,9 +1,34 @@
 # Changelog
 
-All notable changes to Soonpage are documented here.
+All notable changes to Coming Soon Page are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
+
+## v26.11.06-1
+
+### Fixed
+
+- CI passes again: the HTML check allows the colon in the Discord link preview's `id="discord:component-embed"` (html-validate's `valid-id` rule in relaxed mode, as the other Stux.Cloud pages have it). It had failed on every push since the previews were added
+
+## v26.11.06
+
+### Added
+
+- A `test` branch. Work happens there, and changes reach `main` only through a pull request from `test` that needs CI to pass and is reviewed and merged by Leo. Release commits and tags are made on `test`
+
+### Changed
+
+- The README's **Local preview** section moved up from below the footer, and the README gains a **Contributing** section where it had none
+- The README footer's Stux.Cloud and Stuxedo icons follow GitHub's light or dark theme (`icon-light`/`icon-dark` from each brand's media CDN) instead of using their GitHub avatars
+- `CONTRIBUTING.md` calls this a small static HTML template rather than a single-file one (it has several pages), and ends with the Stux.Group note
+- The changelog's intro uses the page's name, Coming Soon Page (it said Soonpage)
+- CI runs on pushes to `test` as well as `main`
+- The README's Versioning section and a new **Branches** section in `CONTRIBUTING.md` describe the `test` branch, and `commit.sh`/`commit.bat` suggest pushing to `test`
+
+### Removed
+
+- Python's `__pycache__` files, which had been committed by mistake. `.gitignore` now keeps them out
 
 ## v26.10.26
 
