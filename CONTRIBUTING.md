@@ -4,8 +4,8 @@
 
 # Contributing to Coming Soon Page
 
-This is a small static HTML template, open for use and modification per the
-[License](README.md#license) section. This document is for anyone working on
+This is a small static HTML template, owned by Stux.Group (see the
+[License](README.md#license) section). This document is for anyone working on
 the template itself (not a downstream deployment).
 
 ## Local setup
