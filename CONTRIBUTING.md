@@ -11,9 +11,10 @@ the template itself (not a downstream deployment).
 ## Local setup
 
 There's no build step or dependencies — just clone the repo and run
-`./dev-server.sh [port]` (or `dev-server.bat [port]` on Windows), which starts
+`./dev-server.sh [port] [--lan]` (or `dev-server.bat [port] [--lan]` on Windows), which starts
 a local static server pointed at the directory. Then open
-`http://127.0.0.1:8000`.
+`http://127.0.0.1:8000`. With `--lan` it also listens on your local network and
+prints the addresses to open on a phone or another device.
 
 ## Project conventions
 
